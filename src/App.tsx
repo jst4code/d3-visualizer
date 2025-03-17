@@ -3,7 +3,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'sonner';
-import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import JobDetails from './pages/JobDetails';
 import {LoginPage} from './pages/Login';

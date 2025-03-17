@@ -844,7 +844,7 @@ const GraphVisualizer: React.FC<GraphVisualizerProps> = ({
               backgroundColor: detailTab === 'history' ? '#f0f0f0' : 'transparent',
               borderBottom: detailTab === 'history' ? '2px solid #1976d2' : 'none'
             }}
-            onClick={() => setDetailTab('history')}
+             onClick={() => setDetailTab('history')}
           >
             Run History
           </div>
