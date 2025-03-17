@@ -24,7 +24,7 @@ const Layout: React.FC = () => {
               <div className="flex-shrink-0 flex items-center">
                 <BarChart2 className="h-8 w-8 text-primary" />
                 <span className="ml-2 text-xl font-bold text-gray-900">
-                  Batch Neurology
+                  Graph Visualizer
                 </span>
               </div>
             </div>

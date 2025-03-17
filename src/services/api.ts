@@ -1,6 +1,7 @@
 import { Job } from '../store/slices/jobsSlice';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+// Change to relative URLs when using proxy
+const API_BASE_URL = 'http://localhost:3001/api';
 
 const handleResponse = async (response: Response) => {
   if (!response.ok) {
@@ -15,13 +16,14 @@ export const login = async (username: string, password: string) => {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username, password }),
+    mode: 'cors',
   });
   return handleResponse(response);
 };
 
 export const fetchJobs = async () => {
   const token = localStorage.getItem('token');
-  const response = await fetch(`${API_BASE_URL}/jobs`, {
+  const response = await fetch(`${API_BASE_URL}/jobs.json`, {
     headers: {
       'Authorization': `Bearer ${token}`
     }
@@ -31,7 +33,7 @@ export const fetchJobs = async () => {
 
 export const fetchJobDetails = async (jobId: string) => {
   const token = localStorage.getItem('token');
-  const response = await fetch(`${API_BASE_URL}/jobs/${jobId}`, {
+  const response = await fetch(`${API_BASE_URL}/jobs/${jobId}.json`, {
     headers: {
       'Authorization': `Bearer ${token}`
     }

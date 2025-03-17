@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "name": "Root System",
+      "type": "box",
+      "level": 0,
+      "parent": null
+    },
+    
+    {"id": "dept_1", "name": "Finance Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_2", "name": "Operations Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_3", "name": "IT Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_4", "name": "HR Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_5", "name": "Marketing Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_6", "name": "Sales Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_7", "name": "R&D Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_8", "name": "Legal Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_9", "name": "Production Department", "type": "box", "level": 1, "parent": "root"},
+    {"id": "dept_10", "name": "Customer Service Department", "type": "box", "level": 1, "parent": "root"},
+
+    {"id": "div_1_1", "name": "Accounting Division", "type": "box", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_2", "name": "Budget Planning Division", "type": "box", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_3", "name": "Financial Reporting Division", "type": "box", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_4", "name": "Treasury Division", "type": "box", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_5", "name": "Tax Division", "type": "box", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_6", "name": "Payroll Division", "type": "box", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_7", "name": "Audit Division", "type": "box", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_8", "name": "Financial Analysis Division", "type": "command", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_9", "name": "Investor Relations Division", "type": "box", "level": 2, "parent": "dept_1"},
+    {"id": "div_1_10", "name": "Risk Management Division", "type": "box", "level": 2, "parent": "dept_1"},
+
+    {"id": "unit_1_1_1", "name": "General Ledger Unit", "type": "box", "level": 3, "parent": "div_1_1"},
+    {"id": "unit_1_1_2", "name": "Accounts Payable Unit", "type": "box", "level": 3, "parent": "div_1_1"},
+    {"id": "unit_1_1_3", "name": "Accounts Receivable Unit", "type": "command", "level": 3, "parent": "div_1_1"},
+    {"id": "unit_1_1_4", "name": "Financial Statements Unit", "type": "box", "level": 3, "parent": "div_1_1"},
+    
+    {"id": "team_1_1_1_1", "name": "Corporate Accounting Team", "type": "box", "level": 4, "parent": "unit_1_1_1"},
+    {"id": "team_1_1_1_2", "name": "Subsidiary Accounting Team", "type": "command", "level": 4, "parent": "unit_1_1_1"},
+    
+    {"id": "group_1_1_1_1_1", "name": "Domestic Accounting Group", "type": "box", "level": 5, "parent": "team_1_1_1_1"},
+    {"id": "group_1_1_1_1_2", "name": "International Accounting Group", "type": "command", "level": 5, "parent": "team_1_1_1_1"},
+    
+    {"id": "job_1_1_1_1_1_1", "name": "Monthly Closing Process", "type": "command", "level": 6, "parent": "group_1_1_1_1_1"},
+    {"id": "job_1_1_1_1_1_2", "name": "Daily Reconciliation", "type": "command", "level": 6, "parent": "group_1_1_1_1_1"},
+    
+    {"id": "job_10_10_4_2_2_1", "name": "Customer Feedback Analysis", "type": "command", "level": 6, "parent": "group_10_10_4_2_2"}
+  ],
+  
+  "links": [
+    {"source": "root", "target": "dept_1"},
+    {"source": "root", "target": "dept_2"},
+    {"source": "root", "target": "dept_3"},
+    {"source": "root", "target": "dept_4"},
+    {"source": "root", "target": "dept_5"},
+    {"source": "root", "target": "dept_6"},
+    {"source": "root", "target": "dept_7"},
+    {"source": "root", "target": "dept_8"},
+    {"source": "root", "target": "dept_9"},
+    {"source": "root", "target": "dept_10"},
+    
+    {"source": "dept_1", "target": "div_1_1"},
+    {"source": "dept_1", "target": "div_1_2"},
+    {"source": "dept_1", "target": "div_1_3"},
+    {"source": "dept_1", "target": "div_1_4"},
+    {"source": "dept_1", "target": "div_1_5"},
+    {"source": "dept_1", "target": "div_1_6"},
+    {"source": "dept_1", "target": "div_1_7"},
+    {"source": "dept_1", "target": "div_1_8"},
+    {"source": "dept_1", "target": "div_1_9"},
+    {"source": "dept_1", "target": "div_1_10"},
+    
+    {"source": "group_10_10_4_2_2", "target": "job_10_10_4_2_2_1"}
+  ]
+}

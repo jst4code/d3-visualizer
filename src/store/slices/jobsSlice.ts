@@ -5,13 +5,19 @@ export interface Job {
   id: string;
   name: string;
   status: 'running' | 'completed' | 'failed' | 'waiting';
-  componentType: string;
+  type: string;
   activitySet: string;
   maxWaitTime: number;
   runtime: number;
-  dependencies: string[];
+  dependencies: Dependency[];
   startTime?: string;
   endTime?: string;
+}
+
+interface Dependency {
+  source: string;
+  target: string;
+  type: string;
 }
 
 interface JobsState {

@@ -1,0 +1,1 @@
+# Note: Never commit the `.env` file to version control.   - DB_CONNECTION: Your database connection string   - API_SECRET: Your API secret   - API_KEY: Your API key2. Update the values in `.env` with your actual credentials:1. Copy `.env.example` to `.env`## Environment Setup

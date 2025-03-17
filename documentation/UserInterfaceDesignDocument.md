@@ -1,7 +1,7 @@
 # User Interface Design Document
 
 ## Overview
-Batch Neurology provides a modern, intuitive interface for visualizing and managing Autosys job workflows.
+Graph Visualizer provides a modern, intuitive interface for visualizing and managing Autosys job workflows.
 
 ## Layout Components
 

@@ -81,7 +81,7 @@ const JobDetails: React.FC = () => {
           <dl className="grid grid-cols-2 gap-x-4 gap-y-6">
             <div>
               <dt className="text-sm font-medium text-gray-500">Component Type</dt>
-              <dd className="mt-1 text-sm text-gray-900">{selectedJob.componentType}</dd>
+              <dd className="mt-1 text-sm text-gray-900">{selectedJob.type}</dd>
             </div>
             <div>
               <dt className="text-sm font-medium text-gray-500">Activity Set</dt>

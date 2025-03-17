@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Node 1",
+      "type": "type1"
+    },
+    {
+      "id": 2,
+      "name": "Node 2",
+      "type": "type2"
+    },
+    {
+      "id": 3,
+      "name": "Node 3",
+      "type": "type3"
+    }
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2
+    },
+    {
+      "source": 2,
+      "target": 3
+    }
+  ]
+  
+}
